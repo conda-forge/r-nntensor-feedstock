@@ -1,4 +1,4 @@
-{% set version = '1.0.4' %}
+{% set version = "1.0.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nnTensor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nnTensor/nnTensor_{{ version }}.tar.gz
-  sha256: ab04b5fdd74db8a5d3ea26e5899f7228dad9fb05575e21f45939b374249323af
+  sha256: c063b7c47cfe6e191e771bbf6ffc8ede1b94fb2a0febc56d6318d6f7602c8efd
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -46,14 +46,11 @@ test:
 about:
   home: https://github.com/rikenbit/nnTensor
   license: Artistic-2.0
-  summary: Some functions for performing non-negative matrix factorization, non-negative CANDECOMP/PARAFAC
-    (CP) decomposition, non-negative Tucker decomposition, and generating toy model
-    data. See Andrzej Cichock et al (2009) <doi:10.1002/9780470747278> and the reference
-    section of GitHub README.md <https://github.com/rikenbit/nnTensor>, for details
-    of the methods.
+  summary: Some functions for performing non-negative matrix factorization, non-negative CANDECOMP/PARAFAC (CP) decomposition, non-negative Tucker decomposition, and generating toy model data. See Andrzej Cichock et al (2009) <doi:10.1002/9780470747278> and the reference section of GitHub README.md <https://github.com/rikenbit/nnTensor>,
+    for details of the methods.
   license_family: OTHER
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0
 
 extra:
   recipe-maintainers:
