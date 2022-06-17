@@ -1,4 +1,4 @@
-{% set version = "1.1.6" %}
+{% set version = "1.1.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nnTensor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nnTensor/nnTensor_{{ version }}.tar.gz
-  sha256: 63d90a0ea9ab52fba13e8f93995cfc53424a5f726ba67fe9543b4f71080980bd
+  sha256: 63542be2274ef490086b5f45ef1ff9d491b38518b7912eebf2379892c4548ee7
 
 build:
   merge_build_host: true  # [win]
