@@ -1,11 +1,11 @@
-About r-nntensor
-================
+About r-nntensor-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nntensor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rikenbit/nnTensor
 
 Package license: Artistic-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nntensor-feedstock/blob/main/LICENSE.txt)
 
 Summary: Some functions for performing non-negative matrix factorization, non-negative CANDECOMP/PARAFAC (CP) decomposition, non-negative Tucker decomposition, and generating toy model data. See Andrzej Cichock et al (2009) <doi:10.1002/9780470747278> and the reference section of GitHub README.md <https://github.com/rikenbit/nnTensor>, for details of the methods.
 
